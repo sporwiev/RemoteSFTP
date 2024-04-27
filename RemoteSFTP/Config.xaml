@@ -1,0 +1,31 @@
+﻿<Window x:Class="RemoteSFTP.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteSFTP"
+        mc:Ignorable="d"
+        Title="Config" Height="560" Width="300" Background="#2a2a2a" Closed="Window_Closed">
+    <Grid>
+        <StackPanel>
+            <Label Content="SFTP" Margin="10,5,10,5" Foreground="white" FontSize="20"/>
+            <Label Content="Username" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox x:Name="UserSftp"  Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1"/>
+            <Label Content="Host" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox x:Name="HostSftp"  Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1"/>
+            <Label Content="Password" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox x:Name="PassSftp"  Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1"/>
+            <Label Content="Path" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox x:Name="Path"  Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1"/>
+            <Label Content="Dataase" Margin="10,5,10,5" Foreground="white" FontSize="20"/>
+            <Label Content="Host" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1" Text="localhost" IsEnabled="False"/>
+            <Label Content="Username" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox x:Name="UserDB"  Background="Transparent" Foreground="white" Margin="10,0,10,0" BorderThickness="0,0,0,1"/>
+            <Label Content="Password" Foreground="white" Margin="10,5,10,5"/>
+            <TextBox Background="Transparent" Foreground="white" Margin="10,0,10,15" BorderThickness="0,0,0,1"/>
+            <Button Content="Test" Foreground="white" Background="#3a3a3a" BorderThickness="0" Margin="10,0,10,10"/>
+            <Button Content="Start" Foreground="white" Background="#3a3a3a" BorderThickness="0" Margin="10,0,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
